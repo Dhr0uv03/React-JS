@@ -6,7 +6,7 @@ const connectDB = async () => {
         console.log("DB Connected");
     })
 
-    await mongoose.connect(`mongodb+srv://manansheta2021:manan123@cluster0.e88pfm2.mongodb.net`)
+    await mongoose.connect(process.env.MONGODB_URI)
 
 }
 
